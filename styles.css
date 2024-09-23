@@ -1,0 +1,53 @@
+/* Reset some basic elements */
+body, h1, h2, p, img {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+nav a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+main {
+    margin-top: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100%; /* Responsive images */
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
