@@ -27,7 +27,7 @@
             <img src="BT3.png" alt="Baitap3.com">
         </section>   
         <section id="bai-tap-4">
-            <h2>Bài Tập 3</h2>
+            <h2>Bài Tập 4</h2>
             <img src="BT4_1.png" alt="Baitap3.com">
             <img src="BT4_2.png" alt="Baitap3.com">
             <img src="BT4_3.png" alt="Baitap3.com">
