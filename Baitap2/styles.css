@@ -126,6 +126,6 @@ body {
 }
 
 .promo-section img {
-    width: 80%;
-    object-fit: cover;
+    width: 60%; /* Chiếm toàn bộ chiều ngang */
+    object-fit: cover; /* Bức ảnh sẽ lấp đầy không gian, nhưng có thể bị cắt ở phần rìa */
 }
