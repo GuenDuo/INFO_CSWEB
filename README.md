@@ -18,6 +18,7 @@
                 <li><a href="Baitap2/Test2.html">Bài Tập 2</a></li>
                 <li><a href="Baitap3/Bai3.html">Bài Tập 3</a></li>
                 <li><a href="Baitap4/Test2.html">Bài Tập 4</a></li>
+                <li><a href="Baitap5/index.html">Bài Tập 5</a></li>
             </ul>
         </section>
         <section>
