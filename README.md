@@ -20,7 +20,8 @@
                 <li><a href="Baitap4/Test2.html">Bài Tập 4</a></li>
                 <li><a href="Baitap5/index.html">Bài Tập 5</a></li>
                 <li><a href="Baitap6/main.html">Bài Tập 6</a></li>
-                <li><a href="Baitap7/index.html">Bài Tập 7</a></li>
+                <li><a href="Baitap7/index.html">Bài Tập 7</a></li> <!-- Bài Tập 7 -->
+                <!--<li><a href="Baitap8/index.html">Bài Tập 8</a></li> <!-- Bài Tập 8, nếu có -->
             </ul>
         </section>
         <section>
