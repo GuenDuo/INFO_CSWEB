@@ -5,7 +5,7 @@
         <p><strong>Tên sinh viên:</strong> Nguyễn Lê Dương</p>
         <p><strong>Mã sinh viên:</strong> BIT230124</p>
         <p><strong>Tên bài tập:</strong> Bài tập 07: Cắt giao diện theo thiết kế figma</p>
-        <p><strong>Tên sinh viên:</strong> Ảnh kết quả bài tập:</p>
+        <p><strong>Ảnh kết quả bài tập::</strong></p>
     </div>
 </body>
 </html>
