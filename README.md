@@ -21,6 +21,7 @@
         <li><a href="Baitap5/index.html">Bài Tập 5</a></li>
         <li><a href="Baitap6/main.html">Bài Tập 6</a></li>
         <li><a href="Baitap7/index.html">Bài Tập 7</a></li>
+        <li><a href="Baitap8/main.html">Bài Tập 8</a></li>
             </ul>
         </section>
         <section>
