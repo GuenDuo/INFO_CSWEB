@@ -1,0 +1,10 @@
+.my_button{
+	background: red; 
+	width: 100px;
+	height: 80px; 
+	line-height: 80px;
+	color: #FFFFFF;
+}
+#last_button{
+	width: 150px;
+}
