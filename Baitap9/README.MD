@@ -10,5 +10,5 @@
 </body>
 </html>
 
-![Anh](result/Flex.png)
-![Anh](result/Grid.png)
+![Anh](Anh1.png)
+![Anh](Anh2.png)
