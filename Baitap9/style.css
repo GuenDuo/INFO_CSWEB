@@ -128,38 +128,200 @@
         z-index: 0;
     }
 
-/* Our Client Section */
+/* Our Client Section - Flexbox Layout */
 .our-client {
-    text-align: center;
-    padding: 80px 0;
-    background-color:   #ffffff;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: flex-start; /* Start items from the left */
+    margin: 50px 0;
+    padding: 0 50px;
+    gap: 100px; /* Space between title and logos */
 }
 
-.our-client h2 {
+/* Header Section: Title and Description */
+.client-header {
+    max-width: 30%; /* Control size of header */
+}
+
+.client-header h2 {
     font-size: 32px;
-    color: #333;
+    font-weight: bold;
+    color: #000;
     margin-bottom: 10px;
 }
 
-.our-client p {
-    font-size: 18px;
+.client-header p {
+    font-size: 16px;
     color: #666;
-    margin-bottom: 40px;
+    margin: 0;
 }
 
+/* Logo Section: Logos from center to the right */
 .client-logos {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+    justify-content: flex-start; /* Align logos to the left within their section */
+    flex-grow: 1; /* Allow logos to take the remaining space */
+    gap: 100px; /* Space between logos */
 }
 
 .client-logos img {
-    max-width: 120px;
-    height: auto;
-    transition: transform 0.3s;
+    width: 120px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    object-fit: contain; /* Maintain aspect ratio without stretching */
+    transition: transform 0.3s ease; /* Smooth scaling on hover */
 }
 
 .client-logos img:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Subtle zoom effect on hover */
+}
+
+/* Section Styling */
+.how-can-we-help {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Để text không bị lệch */
+    padding: 50px;
+    background-color: #fff;
+}
+
+/* Left Text Section */
+.help-left {
+    max-width: 40%;
+}
+
+.help-left h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.help-left p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Cards Section */
+.help-cards {
+    display: flex; /* Sử dụng Flexbox */
+    justify-content: space-between; /* Căn giữa các thẻ */
+    gap: 30px; /* Tăng khoảng cách giữa các card */
+    max-width: 70%; /* Tối đa chiều rộng cho phần thẻ */
+    margin: 0 auto; /* Căn giữa phần thẻ */
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column; /* Sắp xếp theo chiều dọc */
+    justify-content: flex-start; /* Căn lên trên */
+}
+
+.rectangle-background {
+    position: absolute; /* Đặt hình ảnh ở vị trí tuyệt đối */
+    top: 0; /* Đặt hình ảnh ở phần trên cùng */
+    left: 0; /* Đặt hình ảnh ở bên trái */
+    right: 0; /* Đặt hình ảnh ở bên phải */
+    bottom: 0; /* Đặt hình ảnh ở dưới cùng */
+    z-index: -1; /* Đưa hình ảnh xuống dưới cùng */
+    width: 100%; /* Đảm bảo hình ảnh phủ toàn bộ không gian */
+    height: 100%; /* Đảm bảo chiều cao là 100% để phù hợp với các card */
+    object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+    border-radius: 8px; /* Bo góc cho hình ảnh (tùy chọn) */
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column; /* Sắp xếp theo chiều dọc */
+    justify-content: flex-end; /* Căn xuống dưới */
+}
+
+.help-card {
+    background-color: #ffffff; /* Màu nền cho thẻ */
+    border-radius: 8px; /* Bo góc */
+    padding: 20px; /* Khoảng cách bên trong */
+    width: 200px; /* Đặt chiều rộng cố định cho thẻ */
+    height: 300px; /* Đặt chiều cao cố định cho thẻ */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    display: flex;
+    flex-direction: column; /* Căn chỉnh nội dung theo chiều dọc */
+    align-items: center; /* Căn giữa nội dung theo chiều ngang */
+    justify-content: center; /* Căn giữa nội dung theo chiều dọc */
+}
+
+/* Tạo khoảng cách giữa các thẻ trong cột bên trái */
+.left-column .help-card {
+    margin-bottom: 20px; /* Khoảng cách giữa các thẻ trong cột trái */
+}
+
+/* Tạo khoảng cách giữa các thẻ trong cột bên phải */
+.right-column .help-card {
+    margin-top: 20px; /* Khoảng cách giữa các thẻ trong cột phải */
+}
+
+.card-icon {
+    display: flex;
+    align-items: center; /* Căn giữa hình nền */
+    justify-content: center; /* Căn giữa hình nền */
+    margin-bottom: 10px; /* Khoảng cách giữa icon và tiêu đề */
+}
+
+.icon-background {
+    width: 70px; /* Chiều rộng hình nền */
+    height: 70px; /* Chiều cao hình nền */
+    border-radius: 12px; /* Bo góc cho hình nền */
+    display: flex;
+    align-items: center; /* Căn giữa biểu tượng bên trong */
+    justify-content: center; /* Căn giữa biểu tượng bên trong */
+    position: relative; /* Để căn chỉnh hình nền */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+/* Màu sắc nền cho từng biểu tượng */
+.bg-blue {
+    background-color: #cde1f7; /* Màu xanh dương */
+}
+
+.bg-orange {
+    background-color: #fce0b5; /* Màu xanh lá cây */
+}
+
+.bg-red {
+    background-color: #ffd3d9; /* Màu cam */
+}
+
+.bg-green {
+    background-color: #dbffd7; /* Màu tím */
+}
+
+.icon-image {
+    width: 40px; /* Kích thước biểu tượng */
+    height: 40px; /* Kích thước biểu tượng */
+    position: absolute; /* Để căn giữa biểu tượng */
+}
+
+.help-card h3 {
+    font-size: 18px; /* Kích thước chữ tiêu đề */
+    color: #333; /* Màu chữ tiêu đề */
+    margin: 0; /* Không có khoảng cách trên và dưới tiêu đề */
+    text-align: center; /* Căn giữa tiêu đề */
+}
+
+
+.help-card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+
+/* Hình trang trí phía sau (Rectangle, Ellipse) */
+.card-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.05; /* Độ mờ để làm nền */
 }
