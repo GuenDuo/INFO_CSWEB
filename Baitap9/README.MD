@@ -10,5 +10,5 @@
 </body>
 </html>
 
-![Anh](result/Anh1.png)
-![Anh](result/Anh2.png)
+![Anh](Anh1.png)
+![Anh](Anh2.png)
