@@ -1,0 +1,165 @@
+    /* Reset CSS */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Arial', sans-serif;
+    }
+
+    /* Top Menu */
+    .top-menu {
+        width: 100%;
+        height: 80px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 50px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .menu-items a {
+        margin-left: 30px;
+        text-decoration: none;
+        color: #333;
+        font-size: 18px;
+        transition: color 0.3s;
+    }
+
+    .menu-items a:hover {
+        color: #0078ff;
+    }
+
+    /* Hero Headline */
+    .hero-headline {
+        margin-top: 80px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 100px;
+        background-color: #ffffff;
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* Hero Content */
+    .hero-content {
+        max-width: 700px;
+        z-index: 2; /* Đảm bảo nội dung hiển thị trên cùng */
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+        color: #555;
+    }
+
+    .cta-button {
+        padding: 15px 30px; /* Padding mặc định */
+        font-size: 18px; /* Kích thước chữ */
+        color: #fff; /* Màu chữ */
+        background-color: #0078ff; /* Màu nền */
+        border: none; /* Không có viền */
+        border-radius: 30px; /* Bo góc để tạo hình dạng hơi tròn */
+        cursor: pointer; /* Con trỏ chuột */
+        transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền khi hover */
+        position: relative; /* Để có thể điều chỉnh vị trí nếu cần */
+    }
+
+    .cta-button:hover {
+        background-color: #005bb5; /* Thay đổi màu khi hover */
+    }
+
+
+    /* Hero Image */
+    .hero-image {
+        width: 600px;
+        height: auto;
+        position: relative;
+        z-index: 1; /* Đảm bảo nằm trên các trang trí */
+    }
+
+    /* Decorations */
+    .ellipse {
+        position: absolute;
+        top: 25%;
+        left: 53%;
+        transform: translate(-50%, -10%);
+        z-index: 0;
+        width: 120px; /* Sửa lại kích thước nếu cần */
+        height: 120px; /* Sửa lại kích thước nếu cần */
+    }
+
+    /* Rectangle 23 (hình tròn bị khuyết) */
+    .rectangle {
+        position: absolute;
+        bottom: 10%;
+        right: 10%;
+        z-index: 0;
+        width: 120px; /* Đường kính của hình tròn */
+        height: 120px; /* Đường kính của hình tròn */
+    }
+
+    /* Dot Ornament */
+    .dot-ornament {
+        width: 404px; /* Kích thước từ Figma */
+        height: 154px; /* Kích thước từ Figma */
+        position: absolute;
+        top: 469px; /* Vị trí từ Figma */
+        left: 68px; /* Vị trí từ Figma */
+        z-index: 0;
+    }
+
+/* Our Client Section */
+.our-client {
+    text-align: center;
+    padding: 80px 0;
+    background-color:   #ffffff;
+}
+
+.our-client h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.our-client p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.client-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.client-logos img {
+    max-width: 120px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.client-logos img:hover {
+    transform: scale(1.1);
+}
