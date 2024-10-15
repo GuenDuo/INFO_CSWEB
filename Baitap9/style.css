@@ -13,9 +13,7 @@
         background-color: #fff;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        padding: 0 50px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        justify-content: space-around;
         position: fixed;
         top: 0;
         left: 0;
@@ -42,12 +40,10 @@
 
     /* Hero Headline */
     .hero-headline {
-        margin-top: 80px;
         height: 100vh;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 100px;
         background-color: #ffffff;
         position: relative;
         overflow: hidden;
@@ -55,7 +51,9 @@
 
     /* Hero Content */
     .hero-content {
-        max-width: 700px;
+        width: 575px;
+        height: 180px;
+        margin-left: 120px; /* Điều chỉnh khoảng cách sang phải */
         z-index: 2; /* Đảm bảo nội dung hiển thị trên cùng */
     }
 
@@ -72,11 +70,19 @@
         color: #555;
     }
 
+        /* Hero Image */
+        .hero-image {
+            width: 700px;   
+            height: auto;
+            position: relative;
+            z-index: 1; /* Đảm bảo nằm trên các trang trí */
+        }
+
     .cta-button {
         padding: 15px 30px; /* Padding mặc định */
         font-size: 18px; /* Kích thước chữ */
         color: #fff; /* Màu chữ */
-        background-color: #0078ff; /* Màu nền */
+        background-color: #1100ff; /* Màu nền */
         border: none; /* Không có viền */
         border-radius: 30px; /* Bo góc để tạo hình dạng hơi tròn */
         cursor: pointer; /* Con trỏ chuột */
@@ -85,22 +91,14 @@
     }
 
     .cta-button:hover {
-        background-color: #005bb5; /* Thay đổi màu khi hover */
+        background-color: #014d9a; /* Thay đổi màu khi hover */
     }
 
-
-    /* Hero Image */
-    .hero-image {
-        width: 600px;
-        height: auto;
-        position: relative;
-        z-index: 1; /* Đảm bảo nằm trên các trang trí */
-    }
 
     /* Decorations */
     .ellipse {
         position: absolute;
-        top: 25%;
+        top: 20%;
         left: 53%;
         transform: translate(-50%, -10%);
         z-index: 0;
@@ -111,10 +109,10 @@
     /* Rectangle 23 (hình tròn bị khuyết) */
     .rectangle {
         position: absolute;
-        bottom: 10%;
-        right: 10%;
+        bottom: 8%;
+        right: 7%;
         z-index: 0;
-        width: 120px; /* Đường kính của hình tròn */
+        width: 150px; /* Đường kính của hình tròn */
         height: 120px; /* Đường kính của hình tròn */
     }
 
@@ -175,153 +173,83 @@
     transform: scale(1.1); /* Subtle zoom effect on hover */
 }
 
-/* Section Styling */
-.how-can-we-help {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Để text không bị lệch */
-    padding: 50px;
-    background-color: #fff;
+/* Phần hỗ trợ doanh nghiệp */
+.help-business {
+    display: flex; /* Sử dụng flexbox để sắp xếp các phần */
+    justify-content: flex-end; /* Đặt các phần sang bên phải */
+    align-items: flex-start; /* Căn chỉnh các phần ở đầu */
+    padding: 50px 20px;
+    background-color: #ffffff; /* Nền sáng */
 }
 
-/* Left Text Section */
-.help-left {
-    max-width: 40%;
+/* Phần văn bản giới thiệu */
+.help-text {
+    flex: 1; /* Chiếm 1 phần không gian */
+    max-width: 400px; /* Giới hạn chiều rộng */
+    padding: 20px; /* Padding bên trong */
+    border-radius: 10px; /* Bo góc */
+    background-color: #ffffff; /* Nền màu sáng cho hình chữ nhật */
+    margin-left: 20px; /* Khoảng cách từ dịch vụ */
 }
 
-.help-left h2 {
+.help-text h2 {
     font-size: 36px;
-    margin-bottom: 15px;
-    line-height: 1.2;
-    font-weight: bold;
-}
-
-.help-left p {
-    font-size: 18px;
-    color: #666;
-    line-height: 1.6;
-}
-
-/* Cards Section */
-.help-cards {
-    display: flex; /* Sử dụng Flexbox */
-    justify-content: space-between; /* Căn giữa các thẻ */
-    gap: 30px; /* Tăng khoảng cách giữa các card */
-    max-width: 70%; /* Tối đa chiều rộng cho phần thẻ */
-    margin: 0 auto; /* Căn giữa phần thẻ */
-}
-
-.left-column {
-    display: flex;
-    flex-direction: column; /* Sắp xếp theo chiều dọc */
-    justify-content: flex-start; /* Căn lên trên */
-}
-
-.rectangle-background {
-    position: absolute; /* Đặt hình ảnh ở vị trí tuyệt đối */
-    top: 0; /* Đặt hình ảnh ở phần trên cùng */
-    left: 0; /* Đặt hình ảnh ở bên trái */
-    right: 0; /* Đặt hình ảnh ở bên phải */
-    bottom: 0; /* Đặt hình ảnh ở dưới cùng */
-    z-index: -1; /* Đưa hình ảnh xuống dưới cùng */
-    width: 100%; /* Đảm bảo hình ảnh phủ toàn bộ không gian */
-    height: 100%; /* Đảm bảo chiều cao là 100% để phù hợp với các card */
-    object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
-    border-radius: 8px; /* Bo góc cho hình ảnh (tùy chọn) */
-}
-
-.right-column {
-    display: flex;
-    flex-direction: column; /* Sắp xếp theo chiều dọc */
-    justify-content: flex-end; /* Căn xuống dưới */
-}
-
-.help-card {
-    background-color: #ffffff; /* Màu nền cho thẻ */
-    border-radius: 8px; /* Bo góc */
-    padding: 20px; /* Khoảng cách bên trong */
-    width: 200px; /* Đặt chiều rộng cố định cho thẻ */
-    height: 300px; /* Đặt chiều cao cố định cho thẻ */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
-    display: flex;
-    flex-direction: column; /* Căn chỉnh nội dung theo chiều dọc */
-    align-items: center; /* Căn giữa nội dung theo chiều ngang */
-    justify-content: center; /* Căn giữa nội dung theo chiều dọc */
-}
-
-/* Tạo khoảng cách giữa các thẻ trong cột bên trái */
-.left-column .help-card {
-    margin-bottom: 20px; /* Khoảng cách giữa các thẻ trong cột trái */
-}
-
-/* Tạo khoảng cách giữa các thẻ trong cột bên phải */
-.right-column .help-card {
-    margin-top: 20px; /* Khoảng cách giữa các thẻ trong cột phải */
-}
-
-.card-icon {
-    display: flex;
-    align-items: center; /* Căn giữa hình nền */
-    justify-content: center; /* Căn giữa hình nền */
-    margin-bottom: 10px; /* Khoảng cách giữa icon và tiêu đề */
-}
-
-.icon-background {
-    width: 70px; /* Chiều rộng hình nền */
-    height: 70px; /* Chiều cao hình nền */
-    border-radius: 12px; /* Bo góc cho hình nền */
-    display: flex;
-    align-items: center; /* Căn giữa biểu tượng bên trong */
-    justify-content: center; /* Căn giữa biểu tượng bên trong */
-    position: relative; /* Để căn chỉnh hình nền */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
-}
-
-/* Màu sắc nền cho từng biểu tượng */
-.bg-blue {
-    background-color: #cde1f7; /* Màu xanh dương */
-}
-
-.bg-orange {
-    background-color: #fce0b5; /* Màu xanh lá cây */
-}
-
-.bg-red {
-    background-color: #ffd3d9; /* Màu cam */
-}
-
-.bg-green {
-    background-color: #dbffd7; /* Màu tím */
-}
-
-.icon-image {
-    width: 40px; /* Kích thước biểu tượng */
-    height: 40px; /* Kích thước biểu tượng */
-    position: absolute; /* Để căn giữa biểu tượng */
-}
-
-.help-card h3 {
-    font-size: 18px; /* Kích thước chữ tiêu đề */
-    color: #333; /* Màu chữ tiêu đề */
-    margin: 0; /* Không có khoảng cách trên và dưới tiêu đề */
+    margin-bottom: 20px;
     text-align: center; /* Căn giữa tiêu đề */
 }
 
-
-.help-card p {
-    font-size: 16px;
-    color: #666;
-    line-height: 1.5;
+.help-text p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    text-align: center; /* Căn giữa nội dung */
 }
 
+/* Các dịch vụ */
+.services {
+    display: flex; /* Giữ nguyên bố cục flex */
+    flex-wrap: wrap; /* Cho phép các dịch vụ tự động xuống dòng trên màn hình nhỏ */
+    justify-content: flex-start; /* Căn trái các dịch vụ */
+}
 
-/* Hình trang trí phía sau (Rectangle, Ellipse) */
-.card-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.05; /* Độ mờ để làm nền */
+.service {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px; /* Khoảng cách giữa các dịch vụ */
+    width: calc(25% - 20px); /* Đặt chiều rộng cho dịch vụ, 4 dịch vụ trong 1 hàng */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; /* Hiệu ứng khi di chuột */
+}
+
+.service:hover {
+    transform: translateY(-5px); /* Hiệu ứng nâng lên khi hover */
+}
+
+.service img {
+    width: 50px; /* Kích thước biểu tượng */
+    margin-bottom: 15px; /* Khoảng cách giữa biểu tượng và tiêu đề */
+}
+
+.service h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service {
+        width: calc(50% - 20px); /* 2 dịch vụ trong 1 hàng trên màn hình nhỏ */
+    }
+}
+
+@media (max-width: 480px) {
+    .service {
+        width: calc(100% - 20px); /* 1 dịch vụ trên 1 hàng cho màn hình nhỏ nhất */
+    }
 }
