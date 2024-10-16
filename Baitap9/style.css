@@ -48,8 +48,8 @@
     height: 608px;
     top: 80px;
     font-size: 16px;
-    margin-left: 120px; /* Điều chỉnh khoảng cách sang phải */
-    z-index: 2; /* Đảm bảo nội dung hiển thị trên cùng */
+    margin-left: 120px; 
+    z-index: 2;
 }
 
 .page1-text  {
@@ -57,7 +57,7 @@
     width: 450px;
     height: 180px;
     top: 100px;
-    z-index: 2; /* Đảm bảo nội dung hiển thị trên cùng */
+    z-index: 2;
 }
 
 .page1-text p {
@@ -65,9 +65,9 @@
     width: 450px;
     height: 180px;
     top: 80px;
-    z-index: 2; /* Đảm bảo nội dung hiển thị trên cùng */
-    color: #565656; /* Màu chữ */
-    font-weight: normal; /* Để chữ không in đậm */
+    z-index: 2; 
+    color: #565656;
+    font-weight: normal;
 }
 
 .page1-image {
@@ -75,26 +75,26 @@
     height: auto;
     left: 720px;
     position: absolute;
-    z-index: 1; /* Đảm bảo nằm trên các trang trí */
+    z-index: 1;
 }
 
 .cta-button {
     position: absolute;
-    padding: 15px 30px; /* Padding mặc định */
-    font-size: 18px; /* Kích thước chữ */
+    padding: 15px 30px; 
+    font-size: 18px; 
     top: 280px;
     left: 5px;
-    color: #fff; /* Màu chữ */
-    background-color: #1100ff; /* Màu nền */
-    border: none; /* Không có viền */
-    border-radius: 30px; /* Bo góc để tạo hình dạng hơi tròn */
-    cursor: pointer; /* Con trỏ chuột */
-    transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền khi hover */
+    color: #fff;
+    background-color: #1100ff; 
+    border: none; 
+    border-radius: 30px; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
     z-index: 2;
 }
 
 .cta-button:hover {
-    background-color: #014d9a; /* Thay đổi màu khi hover */
+    background-color: #014d9a; 
 }
 
 /* Decorations */
