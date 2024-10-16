@@ -190,43 +190,88 @@ body {
 }
 
 .help-text {
-    position: absolute;
+    position: relative;
     top: 300px;
     width: 396px;
-    height: 180px;
+    height: 280px;
     left: 90px; 
-    
+    z-index: 2;
 }
 
 .help-text h2 {
     font-size: 40px; 
     color: #000; 
     margin-bottom: 20px; 
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Đổ bóng */
+    z-index: 0;
 }
 
 
 .help-text p {
     font-size: 16px; 
     color: #565656;
+    z-index: 0;
+}
+
+.rectangle24 {
+    width: 1110px;
+    height: 619px;
+    position: absolute;
+    top: 80px;
+    right: -120px;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0.2, 0.2); 
+    z-index: 1;
+}
+
+.rectangle25 {
+    position: absolute;
+    top: 220px;
+    left: 60px;
+    width: 178px;
+    height: 178px;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0.2, 0.2); 
+    z-index: 1;
+}
+
+.ellipse87 {
+    position: absolute;
+    bottom: 80px;
+    right: 2px;
+    width: 120px;
+    height: 120px;
+    background-color: #ffefef;
+    border-radius: 100%; 
+    box-shadow: 0 px 10px rgba(0, 0, 0, 0.2); 
+}
+
+
+.dot-ornament2 {
+    position: absolute;
+    bottom: 140px;
+    left: 90px;
+    z-index: 0;
 }
 
 .Box {
     position: absolute;
-    top:20px;
+    top: 0px;
     right: 0px;
     width: 800px;
     height: 867px;
+    z-index: 2; 
 }
 
 
 .Business {
-    position: absolute;
+    position: relative;
     top: 30px;
     left: 40px;
     width: 308px;
     height: 379px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 20px 20px 20px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 
@@ -244,13 +289,316 @@ body {
     width: 240px;
     left: 35px;
     font-size: 16px;
-    bottom: 40px;
+    bottom: 20px;
+    color: #757575;
     text-align: center;
 }
 
 
-.boxsearch { 
-    right: 30px;
-    top:300px;
-    object-fit: contain; 
+.box1 {
+    position: absolute;
+    width: 121px;
+    height: 121px;
+    display: flex;
+    left: 90px;
+    top: 60px;
+    justify-content: center;
+    align-items: center;  
+    background-color: #F1F7FF;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    border-radius: 20px 20px 20px 20px;
+    z-index: 2;
+}
+
+.Business .imagine1 {
+    position: absolute;
+    object-fit: contain;
+    justify-content: center;
+    align-items: center;  
+    width: 75px; 
+    height: 75px;
+    z-index: 1;
+}
+
+
+.Development {
+    position: absolute;
+    bottom: 45px;
+    left: 40px;
+    width: 308px;
+    height: 379px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px 20px 20px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.Development h2 {
+    position: absolute;
+    width: 200px;
+    left: 50px;
+    font-size: 24px;
+    bottom: 80px;
+    text-align: center;
+}
+
+.Development p {
+    position: absolute;
+    width: 240px;
+    left: 35px;
+    font-size: 16px;
+    bottom: 20px;
+    color: #757575;
+    text-align: center;
+}
+
+
+.box2 {
+    position: absolute;
+    width: 121px;
+    height: 121px;
+    display: flex;
+    left: 90px;
+    top: 60px;
+    justify-content: center;
+    align-items: center;  
+    background-color: #FFF2F8;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    border-radius: 20px 20px 20px 20px;
+    z-index: 0;
+}
+
+.Development .imagine2 {
+    position: absolute;
+    object-fit: contain;
+    justify-content: center;
+    align-items: center;  
+    width: 75px; 
+    height: 75px;
+    z-index: 1;
+}
+
+
+.Financial {
+    position: absolute;
+    top: -40px;
+    right: 40px;
+    width: 308px;
+    height: 379px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px 20px 20px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.Financial h2 {
+    position: absolute;
+    width: 200px;
+    left: 50px;
+    font-size: 24px;
+    bottom: 80px;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); 
+    text-align: center;
+}
+
+.Financial p {
+    position: absolute;
+    width: 240px;
+    left: 35px;
+    font-size: 16px;
+    bottom: 20px;
+    color: #757575;
+    text-align: center;
+}
+
+
+.box3 {
+    position: absolute;
+    width: 121px;
+    height: 121px;
+    display: flex;
+    left: 90px;
+    top: 60px;
+    justify-content: center;
+    align-items: center;  
+    background-color: #FFF7E3;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    border-radius: 20px 20px 20px 20px;
+    z-index: 0;
+}
+
+.Financial .imagine3 {
+    position: absolute;
+    object-fit: contain;
+    justify-content: center;
+    align-items: center;  
+    width: 75px; 
+    height: 75px;
+    z-index: 1;
+}
+
+
+.Market {
+    position: absolute;
+    bottom: 120px;
+    right: 40px;
+    width: 308px;
+    height: 379px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px 20px 20px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.Market h2 {
+    position: absolute;
+    width: 200px;
+    left: 50px;
+    font-size: 24px;
+    bottom: 80px;
+    text-align: center;
+}
+
+.Market p {
+    position: absolute;
+    width: 240px;
+    left: 35px;
+    font-size: 16px;
+    bottom: 20px;
+    color: #757575;
+    text-align: center;
+}
+
+
+.box4 {
+    position: absolute;
+    width: 121px;
+    height: 121px;
+    display: flex;
+    left: 90px;
+    top: 60px;
+    justify-content: center;
+    align-items: center;  
+    background-color: #DEFFEE;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    border-radius: 20px 20px 20px 20px;
+    z-index: 0;
+}
+
+.Market .imagine3 {
+    position: absolute;
+    object-fit: contain;
+    justify-content: center;
+    align-items: center;  
+    width: 75px; 
+    height: 75px;
+    z-index: 1;
+}
+
+
+.Business:hover, 
+.Development:hover, 
+.Financial:hover, 
+.Market:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.box1, .box2, .box3, .box4 {
+    transition: transform 0.3s ease;
+}
+
+.box1:hover, 
+.box2:hover, 
+.box3:hover, 
+.box4:hover {
+    transform: scale(1.1);
+}
+
+
+/*Great Since*/
+.great-since {
+    position: relative;
+    width: 1600px;
+    height: 636px; 
+    background-color: #ffffff;
+}
+
+.great-text {
+    position: absolute;
+    top: 150px;
+    width: 532px;
+    height: 232px;
+    right: 200px; 
+    z-index: 2;
+    font-family: 'Arial', "Averta Demo PE Cutted Demo";
+}
+
+.great-text h2 {
+    position: absolute;
+    font-size: 40px;
+    font-weight: 100%;
+    left: 0px; 
+    z-index: 2;
+}
+
+.great-text p{
+    position: absolute;
+    font-size: 16px;
+    color: #565656;
+    bottom: 0px; 
+    z-index: 2;
+}
+
+.video-container {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 550px;
+    height: 372px; 
+}
+
+.video {
+    position: absolute;
+    border-radius: 20px 20px 20px 20px;
+    z-index: 1;
+}
+
+.button {
+    position: absolute;
+    object-fit: contain;
+    justify-content: center;
+    align-items: center;  
+    bottom: 120px;
+    right: 200px;
+    border-radius: 20px 20px 20px 20px;
+    z-index: 2;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+
+.rectangle26 {
+    position: absolute;
+    object-fit: contain;
+    justify-content: center;
+    align-items: center;  
+    top: 120px;
+    right: 580px;
+}
+
+
+.ellipse86 {
+    position: absolute;
+    object-fit: contain;
+    bottom: 60px;
+    left: 620px;
+    border-radius: 20px 20px 20px 20px;
+    z-index: 0;
 }
