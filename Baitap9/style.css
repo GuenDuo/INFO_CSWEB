@@ -1,169 +1,177 @@
-    /* Reset CSS */
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Arial', sans-serif;
-    }
 
-    /* Top Menu */
-    .top-menu {
-        width: 100%;
-        height: 80px;
-        background-color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1000;
-    }
+body {
+}
 
-    .logo {
-        font-size: 24px;
-        font-weight: bold;
-        color: #333;
-    }
+/* Reset CSS */
+.Main {
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', "Averta Demo PE Cutted Demo";
+}
 
-    .menu-items a {
-        margin-left: 30px;
-        text-decoration: none;
-        color: #333;
-        font-size: 18px;
-        transition: color 0.3s;
-    }
-
-    .menu-items a:hover {
-        color: #0078ff;
-    }
-
-    /* Hero Headline */
-    .hero-headline {
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #ffffff;
-        position: relative;
-        overflow: hidden;
-    }
-
-    /* Hero Content */
-    .hero-content {
-        width: 575px;
-        height: 180px;
-        margin-left: 120px; /* Điều chỉnh khoảng cách sang phải */
-        z-index: 2; /* Đảm bảo nội dung hiển thị trên cùng */
-    }
-
-    .hero-content h1 {
-        font-size: 48px;
-        margin-bottom: 20px;
-        color: #333;
-    }
-
-    .hero-content p {
-        font-size: 18px;
-        line-height: 1.5;
-        margin-bottom: 30px;
-        color: #555;
-    }
-
-        /* Hero Image */
-        .hero-image {
-            width: 700px;   
-            height: auto;
-            position: relative;
-            z-index: 1; /* Đảm bảo nằm trên các trang trí */
-        }
-
-    .cta-button {
-        padding: 15px 30px; /* Padding mặc định */
-        font-size: 18px; /* Kích thước chữ */
-        color: #fff; /* Màu chữ */
-        background-color: #1100ff; /* Màu nền */
-        border: none; /* Không có viền */
-        border-radius: 30px; /* Bo góc để tạo hình dạng hơi tròn */
-        cursor: pointer; /* Con trỏ chuột */
-        transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền khi hover */
-        position: relative; /* Để có thể điều chỉnh vị trí nếu cần */
-    }
-
-    .cta-button:hover {
-        background-color: #014d9a; /* Thay đổi màu khi hover */
-    }
-
-
-    /* Decorations */
-    .ellipse {
-        position: absolute;
-        top: 20%;
-        left: 53%;
-        transform: translate(-50%, -10%);
-        z-index: 0;
-        width: 120px; /* Sửa lại kích thước nếu cần */
-        height: 120px; /* Sửa lại kích thước nếu cần */
-    }
-
-    /* Rectangle 23 (hình tròn bị khuyết) */
-    .rectangle {
-        position: absolute;
-        bottom: 8%;
-        right: 7%;
-        z-index: 0;
-        width: 150px; /* Đường kính của hình tròn */
-        height: 120px; /* Đường kính của hình tròn */
-    }
-
-    /* Dot Ornament */
-    .dot-ornament {
-        width: 404px; /* Kích thước từ Figma */
-        height: 154px; /* Kích thước từ Figma */
-        position: absolute;
-        top: 469px; /* Vị trí từ Figma */
-        left: 68px; /* Vị trí từ Figma */
-        z-index: 0;
-    }
-
-/* Our Client Section - Flexbox Layout */
-.our-client {
+/* Top Menu */
+.top-menu {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
     display: flex;
-    align-items: center; /* Center vertically */
-    justify-content: flex-start; /* Start items from the left */
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.menu-items a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.menu-items a:hover {
+    color: #0078ff;
+}
+
+/* Page1-Content */
+.page1-content {
+    position: relative;
+    width: 1372px;
+    height: 608px;
+    top: 80px;
+    font-size: 16px;
+    margin-left: 120px; /* Điều chỉnh khoảng cách sang phải */
+    z-index: 2; /* Đảm bảo nội dung hiển thị trên cùng */
+}
+
+.page1-text  {
+    position: absolute;
+    width: 450px;
+    height: 180px;
+    top: 100px;
+    z-index: 2; /* Đảm bảo nội dung hiển thị trên cùng */
+}
+
+.page1-text p {
+    position: absolute;
+    width: 450px;
+    height: 180px;
+    top: 80px;
+    z-index: 2; /* Đảm bảo nội dung hiển thị trên cùng */
+    color: #565656; /* Màu chữ */
+    font-weight: normal; /* Để chữ không in đậm */
+}
+
+.page1-image {
+    width: 650px;   
+    height: auto;
+    left: 720px;
+    position: absolute;
+    z-index: 1; /* Đảm bảo nằm trên các trang trí */
+}
+
+.cta-button {
+    position: absolute;
+    padding: 15px 30px; /* Padding mặc định */
+    font-size: 18px; /* Kích thước chữ */
+    top: 280px;
+    left: 5px;
+    color: #fff; /* Màu chữ */
+    background-color: #1100ff; /* Màu nền */
+    border: none; /* Không có viền */
+    border-radius: 30px; /* Bo góc để tạo hình dạng hơi tròn */
+    cursor: pointer; /* Con trỏ chuột */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền khi hover */
+    z-index: 2;
+}
+
+.cta-button:hover {
+    background-color: #014d9a; /* Thay đổi màu khi hover */
+}
+
+/* Decorations */
+.ellipse {
+    position: absolute;
+    top: 10px;
+    right: 520px;
+    transform: translate(-50%, -10%);
+    z-index: 0;
+    width: 120px; /* Sửa lại kích thước nếu cần */
+    height: 120px; /* Sửa lại kích thước nếu cần */
+}
+
+.rectangle {
+    position: absolute;
+    bottom: 70px;
+    right: 100px;
+    z-index: 0;
+}
+
+.dot-ornament {
+    position: absolute;
+    height: 150px; /* Kích thước từ Figma */
+    top: 300px; /* Vị trí từ Figma */
+    left: -50px; /* Vị trí từ Figma */
+    z-index: 0;
+}
+
+/* Our Client */
+.our-client {
+    width: 1199.55px;
+    height: 224px;
+    position: relative;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
     margin: 50px 0;
     padding: 0 50px;
-    gap: 100px; /* Space between title and logos */
 }
 
-/* Header Section: Title and Description */
 .client-header {
-    max-width: 30%; /* Control size of header */
+    width: 300px;
+    height: 170px;
+    position: relative;
+    padding: 0 50px;
 }
 
-.client-header h2 {
-    font-size: 32px;
+.client-header h2 { 
+    position: absolute;
+    font-size: 40px;
     font-weight: bold;
     color: #000;
-    margin-bottom: 10px;
 }
 
 .client-header p {
-    font-size: 16px;
-    color: #666;
+    position: absolute;
+    bottom: 30px;
+    font-size: 18px;
+    color: #757575;
     margin: 0;
 }
 
-/* Logo Section: Logos from center to the right */
 .client-logos {
+    position: absolute;
     display: flex;
-    justify-content: flex-start; /* Align logos to the left within their section */
-    flex-grow: 1; /* Allow logos to take the remaining space */
-    gap: 100px; /* Space between logos */
+    justify-content: center; 
+    top: 90px;
+    right: -100px;
+    gap: 110px; /* Space between logos */
 }
 
-.client-logos img {
-    width: 120px; /* Fixed width */
+.client-logos img { 
+    width: 130px; /* Fixed width */
     height: 100px; /* Fixed height */
     object-fit: contain; /* Maintain aspect ratio without stretching */
     transition: transform 0.3s ease; /* Smooth scaling on hover */
@@ -173,83 +181,76 @@
     transform: scale(1.1); /* Subtle zoom effect on hover */
 }
 
-/* Phần hỗ trợ doanh nghiệp */
+/*help-business*/
 .help-business {
-    display: flex; /* Sử dụng flexbox để sắp xếp các phần */
-    justify-content: flex-end; /* Đặt các phần sang bên phải */
-    align-items: flex-start; /* Căn chỉnh các phần ở đầu */
-    padding: 50px 20px;
+    position: relative;
+    width: 1358px;
+    height: 867px; 
     background-color: #ffffff; /* Nền sáng */
 }
 
-/* Phần văn bản giới thiệu */
 .help-text {
-    flex: 1; /* Chiếm 1 phần không gian */
-    max-width: 400px; /* Giới hạn chiều rộng */
-    padding: 20px; /* Padding bên trong */
-    border-radius: 10px; /* Bo góc */
-    background-color: #ffffff; /* Nền màu sáng cho hình chữ nhật */
-    margin-left: 20px; /* Khoảng cách từ dịch vụ */
+    position: absolute;
+    top: 300px;
+    width: 396px;
+    height: 180px;
+    left: 90px; 
+    
 }
 
 .help-text h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    text-align: center; /* Căn giữa tiêu đề */
+    font-size: 40px; 
+    color: #000; 
+    margin-bottom: 20px; 
 }
+
 
 .help-text p {
-    font-size: 18px;
-    margin-bottom: 40px;
-    text-align: center; /* Căn giữa nội dung */
+    font-size: 16px; 
+    color: #565656;
 }
 
-/* Các dịch vụ */
-.services {
-    display: flex; /* Giữ nguyên bố cục flex */
-    flex-wrap: wrap; /* Cho phép các dịch vụ tự động xuống dòng trên màn hình nhỏ */
-    justify-content: flex-start; /* Căn trái các dịch vụ */
+.Box {
+    position: absolute;
+    top:20px;
+    right: 0px;
+    width: 800px;
+    height: 867px;
 }
 
-.service {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px; /* Khoảng cách giữa các dịch vụ */
-    width: calc(25% - 20px); /* Đặt chiều rộng cho dịch vụ, 4 dịch vụ trong 1 hàng */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s; /* Hiệu ứng khi di chuột */
+
+.Business {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 308px;
+    height: 379px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    border-radius: 20px 20px 20px 20px;
 }
 
-.service:hover {
-    transform: translateY(-5px); /* Hiệu ứng nâng lên khi hover */
+
+.Business h2 {
+    position: absolute;
+    width: 200px;
+    left: 50px;
+    font-size: 24px;
+    bottom: 80px;
+    text-align: center;
 }
 
-.service img {
-    width: 50px; /* Kích thước biểu tượng */
-    margin-bottom: 15px; /* Khoảng cách giữa biểu tượng và tiêu đề */
+.Business p {
+    position: absolute;
+    width: 240px;
+    left: 35px;
+    font-size: 16px;
+    bottom: 40px;
+    text-align: center;
 }
 
-.service h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
 
-.service p {
-    font-size: 14px;
-    color: #555;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .service {
-        width: calc(50% - 20px); /* 2 dịch vụ trong 1 hàng trên màn hình nhỏ */
-    }
-}
-
-@media (max-width: 480px) {
-    .service {
-        width: calc(100% - 20px); /* 1 dịch vụ trên 1 hàng cho màn hình nhỏ nhất */
-    }
+.boxsearch { 
+    right: 30px;
+    top:300px;
+    object-fit: contain; 
 }
