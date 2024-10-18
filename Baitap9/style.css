@@ -1,4 +1,8 @@
 
+.body{
+    cursor: url(../images/),auto;
+}
+
 .Main {
     position: relative;
     width: auto;
