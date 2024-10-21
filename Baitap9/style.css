@@ -1,13 +1,12 @@
 
 .body{
-    cursor: url(../images/),auto;
 }
 
 .Main {
     position: relative;
     width: auto;
     height: auto;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', "Averta Demo PE Cutted Demo";
@@ -832,3 +831,108 @@
     filter: brightness(1.2);
 }
 
+/* Newsletter */
+
+.newsletter{
+    position: relative; 
+    width: 1366px;
+    height: 387px;
+    top: 100px;
+    left: 82px;
+}
+
+.newsletter-content {
+    position: relative;
+    display: flex;
+    width: 1197px;
+    height: 247px;
+    left: 82px;
+    background-color: #F4F9FF;
+    padding: 20px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    gap: 20px;
+}
+
+.newsletter-content h1 {
+    position: absolute;
+    left: 100px;
+    top: 70px;
+    font-size: 40px;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.newsletter-content p {
+    position: absolute;
+    left: 100px;
+    bottom: 60px;
+    font-size: 18px;
+    color: #666;
+}
+
+.rectangle31 {
+    position: absolute;
+    bottom: 100px;
+    right: 0px;
+    font-size: 18px;
+    z-index: 2;
+}
+
+.rectangle32 {
+    position: absolute;
+    bottom: 50px;
+    left: 35px;
+    font-size: 18px;
+    z-index: -1;
+}
+
+.dotpic4 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+
+.newsletter-input {
+    position: absolute;
+    width: 479px;
+    height: 70px;
+    right: 100px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 50px;
+    padding: 5px;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.newsletter-input input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+    flex: 1;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.newsletter-input button {
+    background-color: #2639ED;
+    width: 188px;
+    height: 60px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter-input button:hover {
+    background-color: #e0e0e0;
+}
