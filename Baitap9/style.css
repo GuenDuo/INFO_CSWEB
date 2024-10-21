@@ -837,7 +837,6 @@
     position: relative; 
     width: 1366px;
     height: 387px;
-    top: 100px;
     left: 82px;
 }
 
@@ -846,6 +845,7 @@
     display: flex;
     width: 1197px;
     height: 247px;
+    top: 50px;
     left: 82px;
     background-color: #F4F9FF;
     padding: 20px 20px;
@@ -874,7 +874,7 @@
 
 .rectangle31 {
     position: absolute;
-    bottom: 100px;
+    bottom: 50px;
     right: 0px;
     font-size: 18px;
     z-index: 2;
@@ -882,17 +882,16 @@
 
 .rectangle32 {
     position: absolute;
-    bottom: 50px;
+    bottom: 20px;
     left: 35px;
     font-size: 18px;
     z-index: -1;
 }
 
-.dotpic4 {
+.dot45 {
     position: absolute;
     top: 0px;
     right: 0px;
-    z-index: 1;
 }
 
 
