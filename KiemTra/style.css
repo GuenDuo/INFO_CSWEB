@@ -74,13 +74,14 @@ header a::before {
 
 /* Header */
 
+/* Body */
 
 .box {
     position: relative;
     width: 700px;
     height: 600px; 
-    background-color: #EFF0F6;
-    border: 2px solid #ffffff;
+    background-color: #FFFFFF33;
+    border: 2px solid #EFF0F6;
     border-radius: 10px;
     backdrop-filter: blur(10px); 
     display: flex; 
@@ -88,6 +89,7 @@ header a::before {
     justify-content: center; 
     padding: 20px; 
     margin: 20px; 
+    z-index: 1;
 }
 
 .box_header {
@@ -98,9 +100,16 @@ header a::before {
     display: flex; 
     align-items: center; 
     justify-content: center;  
-    gap: 120px;
-    background-color: #EFF0F6;
     border-bottom: 1px solid #D9DBE9;
+}
+
+.phase{
+    position: absolute;
+    top: 20px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;  
+    gap: 20px;
 }
 
 .phase1{
@@ -149,3 +158,184 @@ header a::before {
     height: 40px;
     border-radius: 50%;
 }
+
+
+.rectangle_full{
+    background-color: #4A3AFF;
+    right: 0px;
+    width: 50px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+
+.rectangle1{
+    background-color: #EFF0F6;
+    width: 100px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.rectangle2{
+    background-color: #EFF0F6;
+    width: 100px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+
+.rectangle3{
+    background-color: #EFF0F6;
+    width: 100px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.leftband1 {
+    position: absolute;
+    background-color: #B7B0FF;
+    opacity: 40%;
+    top: 570px;
+    left: -10px;
+    width: 400px; 
+    height: 80px; 
+    transform: rotate(-10deg);
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
+    z-index: 0;
+}
+
+.leftband2 {
+    position: absolute;
+    background-color: rgba(74, 58, 255, 0.7);
+    bottom: 275px;
+    left: -10px;
+    width: 200px; 
+    height: 80px; 
+    transform: rotate(-10deg);
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
+    z-index: 0;
+}
+
+.rightband1 {
+    position: absolute;
+    background-color: #B7B0FF;
+    opacity: 40%;
+    top: 420px;
+    right: -48px;
+    width: 700px; 
+    height: 80px; 
+    transform: rotate(-10deg);
+    clip-path: polygon(5% 0%, 100% 0, 100% 100%, 0 100%);
+    z-index: 0;
+}
+
+.rightband2 {
+    position: absolute;
+    background-color: rgba(74, 58, 255, 0.7);
+    top: 320px;
+    right: -55px;
+    width: 500px; 
+    height: 80px; 
+    transform: rotate(-10deg);
+    clip-path: polygon(5% 0%, 100% 0, 100% 100%, 0 100%);
+    z-index: 0;
+}
+
+.rightband3 {
+    position: absolute;
+    background-color: #F4EBFF;
+    bottom: 490px;
+    right: -60px;
+    width: 190px; 
+    height: 80px; 
+    transform: rotate(-10deg);
+    clip-path: polygon(5% 0%, 100% 0, 100% 100%, 0 100%);
+    z-index: 0;
+}
+
+
+.box_body {
+    position: relative;
+    width: 700px;
+    height: 600px;
+    bottom: 0px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;  
+    border-bottom: 1px solid #D9DBE9;
+}
+
+
+.box_body h2{
+    position: absolute;
+    font-family: Inherit;
+    font-weight: normal;
+    width: 400px;
+    height: 20px;
+    top: 120px;
+    left: 30px;
+    display: flex; 
+    justify-content: flex-start;  
+}
+
+
+.box_body p {
+    position: absolute;
+    font-family: Inherit;
+    width: 380px;
+    height: 40px;
+    color: #8A8A8A;
+    top: 160px;
+    left: 30px;
+    display: flex; 
+    justify-content: flex-start;  
+}
+
+
+.box_form{
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.frame1 {
+    position: absolute;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px; 
+    border-radius: 10px; /* Bo góc */
+}
+
+.form-group {
+    display: flex;
+    font-family: Inherit;
+    flex-direction: column; 
+    align-items: flex-start; 
+}
+
+.form-group label {
+    margin-bottom: 5px; 
+    font-size: 16px; 
+}
+
+.form-group input {
+    width: 265px; 
+    height: 35px;
+    padding: 10px; 
+    background-color: #ffffff;
+    border: 1px solid #E1E3E6; 
+    border-radius: 8px; 
+    font-size: 16px; 
+}
+
+
+/* Body */
