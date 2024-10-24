@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1500px;
+    height: 1000px;
+    margin: 0;
+}
