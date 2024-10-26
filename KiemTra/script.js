@@ -44,3 +44,5 @@ form.addEventListener('submit', function(event) {
         alert('Thông tin đã được gửi thành công!');
     }
 });
+
+// Nguyễn Lê Dương - BIT230124
