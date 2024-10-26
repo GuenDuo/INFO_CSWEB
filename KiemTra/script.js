@@ -1,49 +1,48 @@
-$(document).ready(function () {
-    $('.question, .long-question').on('mousedown', function () {
-        $(this).find('.icon').addClass('active'); // Thêm hiệu ứng khi nhấn chuột
-    });
 
-    $(document).on('mouseup', function () {
-        $('.icon').removeClass('active'); // Xóa hiệu ứng khi nhả chuột
-    });
+const form = document.querySelector('.box_form');
+const emailInput = document.getElementById('email');
+const phoneInput = document.getElementById('phone');
+const addressInput = document.getElementById('address');
+const cityInput = document.getElementById('city');
+const zipInput = document.getElementById('zip');
 
-    $('.icon').click(function () {
-        const questionFrame = $(this)
-            .closest('.frame_question, .long-frame_question')
-            .parent('.question, .long-question');
-        const answerFrame = questionFrame.find('.frame_answer');
-        const questionText = questionFrame.find('.frame_question p, .long-frame_question p');
+function validateInputs() {
+    let isValid = true;
 
-        const isLongFrame = questionFrame.hasClass('long-question');
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(emailInput.value)) {
+        alert("Vui lòng nhập email hợp lệ.");
+        isValid = false;
+    }
 
-        if (answerFrame.is(':visible')) {
-            answerFrame.fadeOut(300, function () {
-                questionFrame.css('height', '');
-            });
+    const phonePattern = /^\d{10}$/;
+    if (!phonePattern.test(phoneInput.value)) {
+        alert("Vui lòng nhập số điện thoại hợp lệ (10 chữ số).");
+        isValid = false;
+    }
 
-            $(this).animate({ opacity: 0 }, 200, function () {
-                $(this).text('+').animate({ opacity: 1 }, 200);
-            });
+    if (addressInput.value.trim() === '') {
+        alert("Vui lòng nhập địa chỉ.");
+        isValid = false;
+    }
+    if (cityInput.value.trim() === '') {
+        alert("Vui lòng nhập thành phố.");
+        isValid = false;
+    }
+    if (zipInput.value.trim() === '') {
+        alert("Vui lòng nhập mã ZIP.");
+        isValid = false;
+    }
 
-            questionText.animate({ opacity: 1 }, 200, function () {
-                questionText.css('color', '#0C0C0C');
-                questionText.animate({ opacity: 1 }, 200);
-            });
-        } else {
-            const height = isLongFrame ? '230px' : '204px';
-            questionFrame.css('height', height);
-            answerFrame.fadeIn(1000);
+    return isValid;
+}
 
-            $(this).animate({ opacity: 0 }, 200, function () {
-                $(this).text('-').animate({ opacity: 1 }, 200);
-            });
+form.addEventListener('submit', function(event) {
+    event.preventDefault(); 
 
-            questionText.animate({ opacity: 1 }, 200, function () {
-                questionText.css('color', '#A10550');
-                questionText.animate({ opacity: 1 }, 200);
-            });
-        }
-    });
+    if (validateInputs()) {
+        alert('Thông tin đã được gửi thành công!');
+    }
 });
 
 // Nguyễn Lê Dương - BIT230124
